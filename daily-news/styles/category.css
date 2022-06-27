@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: white;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightgray; */
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+nav p {
+  font-weight: bold;
+}
+nav #sign-in {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 4px 25px;
+  border: 3px solid #0b1133;
+}
+nav #sign-in:hover {
+  background-color: #0b1133;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.categories {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories ul {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: auto;
+  list-style: none;
+  overflow-x: auto;
+  height: 62px;
+  align-items: center;
+}
+.categories ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(63, 57, 57);
+  margin: 0 22px;
+  padding-bottom: 16px;
+}
+.categories ul li .active {
+  border-bottom: 4.5px solid rgb(212, 15, 15);
+  color: rgb(173, 32, 32);
+}
+.categories ul li a:hover {
+  border-bottom: 4.5px solid rgb(212, 15, 15);
+}
+
+/* ggg */
+
+/* gg */
+.a {
+  width: 100%;
+  height: 500px;
+}
+.a h3 {
+  font-size: 26px;
+  margin: 0 0 5px 80px;
+  padding: 10px 0 0 0;
+  text-decoration: 4px underline #0b1133;
+}
+.b {
+  width: auto;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.b a {
+  text-decoration: none;
+}
+.c {
+  width: 25%;
+  height: 100%;
+  border: 3px solid rgb(83, 78, 78);
+}
+.c a img {
+  margin: 6px auto;
+  display: flex;
+  width: 80%;
+}
+#break p {
+  color: black;
+  text-decoration: 3px underline #0b1133;
+}
+#break h4 {
+  color: #0b1133;
+  margin: 4px 0;
+}
+#break h4:hover {
+  color: rgb(153, 30, 30);
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .c {
+    width: 30%;
+  }
+  .c a img {
+    width: 95%;
+  }
+  .a {
+    height: 420px;
+  }
+  .b {
+    height: 350px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .a {
+    height: 670px;
+  }
+  .b {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .c {
+    width: 40%;
+  }
+  .c a img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 413px) {
+  nav img {
+    width: 100px;
+  }
+  .c {
+    width: 45%;
+  }
+  .c a img {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 310px) {
+  nav img {
+    width: 85px;
+  }
+  nav #sign-in {
+    padding: 3px 12px;
+    font-size: 14px;
+  }
+  nav p {
+    font-size: 14px;
+  }
+}
